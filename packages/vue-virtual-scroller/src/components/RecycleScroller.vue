@@ -389,7 +389,7 @@ export default {
           // When non continous scrolling is ending, we force a refresh
           if (!continuous) {
             clearTimeout(this.$_refreshTimout)
-            this.$_refreshTimout = setTimeout(this.handleScroll, this.updateInterval + 100)
+            this.$_refreshTimout = setTimeout(this.handleScroll, this.updateInterval + 5)
           }
         })
 
